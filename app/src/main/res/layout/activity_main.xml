@@ -7,90 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chrisbennett.usingadatabase.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="44dp"
-        android:id="@+id/txtSuccess" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Grade"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="31dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Course"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/event"
-        android:layout_alignTop="@+id/textView"
-        android:layout_toEndOf="@+id/textView3" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/grade"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignStart="@+id/event"
-        android:layout_alignEnd="@+id/event" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/course"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignEnd="@+id/grade"
-        android:layout_alignStart="@+id/grade" />
+    tools:context="com.example.chrisbennett.usingadatabase.Act_AddToDB">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Submit!"
-        android:id="@+id/btnSubmit"
-        android:layout_below="@+id/course"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:onClick="addGrade" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¡View!"
-        android:id="@+id/btnView"
-        android:layout_below="@+id/btnSubmit"
-        android:layout_alignEnd="@+id/btnSubmit"
-        android:layout_marginTop="32dp"
-        android:onClick="viewGrades" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtView"
-        android:layout_below="@+id/btnView"
-        android:layout_above="@+id/txtSuccess"
-        android:layout_alignEnd="@+id/btnView" />
+        android:text="Add"
+        android:id="@+id/btn_addMenu"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
